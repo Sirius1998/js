@@ -21,4 +21,21 @@ function chunkArrayInGroups(arr, size) {
     return newArray;
 }
 
+/*feed it a stirng value as args and it will return a new string value using all t
+he char values once from the orginal args in random order.*/
+const passwordGenerator = function(pass){
+    console.log(`orginal password: ${pass}`);
+    const length = pass.length;
+    pass = pass.split("");
+    let final = [];
+    for(let i = 0; i < length; i++){
+        let random = Math.floor(Math.random() * pass.length);
+        final.push(pass[random]);
+        pass.splice(random, 1);
+    }
+    console.log(`new password: ${final.join("")}`);
+}
+let password = "";
+passwordGenerator(password.toLowerCase());
+
 
