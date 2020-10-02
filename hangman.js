@@ -54,7 +54,3 @@ const hangman = function(){
     }
 };
 hangman();
-
-
-
-
