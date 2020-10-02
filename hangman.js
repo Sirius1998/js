@@ -34,8 +34,8 @@ const hangman = function(){
             if(solution.join('') === gameWord.join('')){
                 console.log('you won the game!');
                 console.log(`game word: ${gameWord.join('')}`);
-                console.log(`it took you ${tries} tries to guess the word`);
-                console.log(`your word: ${solution.join('')}\n`);
+                console.log(`your word: ${solution.join('')}`);
+                console.log(`it took you ${tries} tries to guess the word\n`);
                 break;
             }
         }
