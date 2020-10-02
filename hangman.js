@@ -52,7 +52,7 @@ const hangman = function(){
                 break;
             }
     }
-}   
+};
 hangman();
 
 
