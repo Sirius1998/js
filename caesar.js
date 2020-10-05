@@ -1,3 +1,4 @@
+// Incomplete Ceasar Cipher. Only work for shifting up and not down.
 const caesarCipher = function(text, change){
     const upper = [];
     const lower = [];
